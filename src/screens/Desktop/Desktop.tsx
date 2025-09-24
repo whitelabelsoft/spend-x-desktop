@@ -7,6 +7,12 @@ export const Desktop = (): JSX.Element => {
     <div
       className="overflow-hidden bg-[linear-gradient(180deg,rgba(235,243,255,1)_0%,rgba(255,255,255,1)_29%,rgba(235,243,255,1)_54%,rgba(255,255,255,1)_80%,rgba(235,243,255,1)_100%),linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_100%)] w-full min-h-screen relative"
       data-model-id="1:55"
+      style={{
+        // TRANSFORM SCALE: Уменьшение всего контента на 20%
+        // Для отката: изменить scale(0.8) на scale(1.0)
+        transform: 'scale(0.8)',
+        transformOrigin: 'top center'
+      }}
     >
       {/* Decorative background elements - hidden on mobile */}
       <img
